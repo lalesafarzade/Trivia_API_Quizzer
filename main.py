@@ -18,10 +18,12 @@ for question in question_data:
     question_bank.append(new_question)
 
 
-quiz = QuizBrain(question_bank)
-quize_ui=QuizInterface(quiz)
-#while quiz.still_has_questions():
-    #quiz.next_question()
+def tr_app(my_list=question_bank):
+    quiz = QuizBrain(my_list)
+    quize_ui=QuizInterface(quiz)
+    print("You've completed the quiz")
+    print(f"Your final score was: {quiz.score}/{quiz.question_number}")
 
-print("You've completed the quiz")
-print(f"Your final score was: {quiz.score}/{quiz.question_number}")
+
+if __name__ == '__main__':
+    tr_app(question_bank)
