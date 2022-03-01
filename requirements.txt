@@ -1,0 +1,4 @@
+argon2==0.1.10
+argon2_cffi==20.1.0
+pyttsx3==2.71
+requests==2.25.1
